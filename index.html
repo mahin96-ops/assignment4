@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-03</title>
+</head>
+
+<!-- tailwind and daisyUi cdn -->
+ <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<!-- google font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+<!-- fontawesome -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+    *{
+        font-family: "Inter", sans-serif;
+    }
+    h1{
+        color: #002C5C;
+    }
+    .halka{
+       color: #64748B;
+    }
+</style>
+
+<body class="min-h-screen w-10/12 bg-base-200 mx-auto">
+
+
+    <!-- header  -->
+    <header class="grid grid-cols-3 sm:grid-cols-1 py-10 space-y-4 border-b-2 border-b-[#E6E7E9]">
+        <h1 class="text-[20px] font-bold">Job application Tracker</h1>
+        <div class="grid grid-cols-3 gap-3">
+            <div class="card  bg-base-100 card-xs shadow px-2">
+               <div class="card-body">
+                 <p class="card-title">Total</p>
+                 <p id="total" class="text-[20px] font-bold text-[#002C5C]">8</p>
+              </div>
+            </div>
+
+
+            <div class="card  bg-base-100 card-xs shadow px-2">
+               <div class="card-body">
+                 <p class="card-title">Interview</p>
+                 <p id="green" class="text-[20px] font-bold text-[#10B981]">0</p>
+              </div>
+            </div>
+
+
+            <div class="card  bg-base-100 card-xs shadow px-2">
+               <div class="card-body">
+                 <p class="card-title">Rejecteed</p>
+                 <p id="red" class="text-[20px] font-bold text-[#EF4444]">0</p>
+              </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- available jobs -->
+  <section class="py-10 space-y-3">
+          <div class="flex justify-between">
+            <div><h1 class="font-bold text-[20px]">Available Jobs</h1></div>
+
+            <div class="text-[#64748B]  flex gap-1 font-semibold px-1"> <p> <span id="cureent">0</span><span>8</span></p>jobs</div>
+        </div>
+
+       
+
+        <div>
+            <button onclick="show('card-page')" id="all-btn" class="btn btn-primary btn-soft px-10 py-0 ">All </button>
+
+            <button onclick="show('interview-page')" id="interview-btn" class="btn btn-primary btn-soft px-10 py-0">Interview </button>
+
+            <button onclick="show('rejected-page')" id="rejected-btn" class="btn btn-primary btn-soft px-10 py-0">Rejected </button>
+        </div>
+    </section>
+
+
+     <!-- cards -->
+
+    <section id="card-page" class="space-y-8 p-1 md grid ">
+      
+
+            <div class="card w-full bg-base-100 card-sm shadow-sm">
+           <div class="card-body">
+            <div class="justify-between card-actions">
+                 <h1 class="card-title">TechCorp Industries</h1>
+                  <button id="" class="btn btn-soft rounded-full trash"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+            <p class="halka">senior Frontend Developer</p>
+            <p class="halka py-2">SAn Fransisco,CA . Full-time
+                •
+             $7430,000 - $44,000</p>
+             <button id="" class="btn btn-primary btn-soft  w-40 not-btn">NOT APPLIED</button>
+             <p>We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.
+            </p>
+            <div>
+                 <button id="" class="btn text-green-500 border-green-500 border-2 green-btn">INTERVIEW</button>
+                 <button id="" class="btn text-red-500 border-red-500 border-2 red-btn">REJECTED</button>
+            </div>
+             
+        </div>
+    </div>
+
+
+      <div class="card w-full bg-base-100 card-sm shadow-sm">
+           <div class="card-body">
+            <div class="justify-between card-actions">
+                 <h1 class="card-title">TechCorp Industries</h1>
+                  <button id="" class="btn btn-soft rounded-full trash"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+            <p class="halka">senior Frontend Developer</p>
+            <p class="halka py-2">SAn Fransisco,CA . Full-time
+                •
+             $7430,000 - $44,000</p>
+             <button id="" class="btn btn-primary btn-soft  w-40 not-btn">NOT APPLIED</button>
+             <p>We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.
+            </p>
+            <div>
+                 <button id="" class="btn text-green-500 border-green-500 border-2 green-btn">INTERVIEW</button>
+                 <button id="" class="btn text-red-500 border-red-500 border-2 red-btn">REJECTED</button>
+            </div>
+             
+        </div>
+    </div>
+
+
+     
+      <div class="card w-full bg-base-100 card-sm shadow-sm">
+           <div class="card-body">
+            <div class="justify-between card-actions">
+                 <h1 class="card-title">TechCorp Industries</h1>
+                  <button id="" class="btn btn-soft rounded-full trash"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+            <p class="halka">senior Frontend Developer</p>
+            <p class="halka py-2">SAn Fransisco,CA . Full-time
+                •
+             $7430,000 - $44,000</p>
+             <button id="" class="btn btn-primary btn-soft  w-40 not-btn">NOT APPLIED</button>
+             <p>We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.
+            </p>
+            <div>
+                 <button id="" class="btn text-green-500 border-green-500 border-2 green-btn">INTERVIEW</button>
+                 <button id="" class="btn text-red-500 border-red-500 border-2 red-btn">REJECTED</button>
+            </div>
+             
+        </div>
+    </div>
+
+
+     <div class="card w-full bg-base-100 card-sm shadow-sm">
+           <div class="card-body">
+            <div class="justify-between card-actions">
+                 <h1 class="card-title">TechCorp Industries</h1>
+                  <button id="" class="btn btn-soft rounded-full trash"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+            <p class="halka">senior Frontend Developer</p>
+            <p class="halka py-2">SAn Fransisco,CA . Full-time
+                •
+             $7430,000 - $44,000</p>
+             <button id="" class="btn btn-primary btn-soft  w-40 not-btn">NOT APPLIED</button>
+             <p>We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.
+            </p>
+            <div>
+                 <button id="" class="btn text-green-500 border-green-500 border-2 green-btn">INTERVIEW</button>
+                 <button id="" class="btn text-red-500 border-red-500 border-2 red-btn">REJECTED</button>
+            </div>
+             
+        </div>
+    </div>
+
+
+       <div class="card w-full bg-base-100 card-sm shadow-sm">
+           <div class="card-body">
+            <div class="justify-between card-actions">
+                 <h1 class="card-title">TechCorp Industries</h1>
+                  <button id="" class="btn btn-soft rounded-full trash"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+            <p class="halka">senior Frontend Developer</p>
+            <p class="halka py-2">SAn Fransisco,CA . Full-time
+                •
+             $7430,000 - $44,000</p>
+             <button id="" class="btn btn-primary btn-soft  w-40 not-btn">NOT APPLIED</button>
+             <p>We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.
+            </p>
+            <div>
+                 <button id="" class="btn text-green-500 border-green-500 border-2 green-btn">INTERVIEW</button>
+                 <button id="" class="btn text-red-500 border-red-500 border-2 red-btn">REJECTED</button>
+            </div>
+             
+        </div>
+    </div>
+
+
+       <div class="card w-full bg-base-100 card-sm shadow-sm">
+           <div class="card-body">
+            <div class="justify-between card-actions">
+                 <h1 class="card-title">TechCorp Industries</h1>
+                  <button id="" class="btn btn-soft rounded-full trash"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+            <p class="halka">senior Frontend Developer</p>
+            <p class="halka py-2">SAn Fransisco,CA . Full-time
+                •
+             $7430,000 - $44,000</p>
+             <button id="" class="btn btn-primary btn-soft  w-40 not-btn">NOT APPLIED</button>
+             <p>We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.
+            </p>
+            <div>
+                 <button id="" class="btn text-green-500 border-green-500 border-2 green-btn">INTERVIEW</button>
+                 <button id="" class="btn text-red-500 border-red-500 border-2 red-btn">REJECTED</button>
+            </div>
+             
+        </div>
+    </div>
+
+
+   <div class="card w-full bg-base-100 card-sm shadow-sm">
+           <div class="card-body">
+            <div class="justify-between card-actions">
+                 <h1 class="card-title">TechCorp Industries</h1>
+                  <button id="" class="btn btn-soft rounded-full trash"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+            <p class="halka">senior Frontend Developer</p>
+            <p class="halka py-2">SAn Fransisco,CA . Full-time
+                •
+             $7430,000 - $44,000</p>
+             <button id="" class="btn btn-primary btn-soft  w-40 not-btn">NOT APPLIED</button>
+             <p>We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.
+            </p>
+            <div>
+                 <button id="" class="btn text-green-500 border-green-500 border-2 green-btn">INTERVIEW</button>
+                 <button id="" class="btn text-red-500 border-red-500 border-2 red-btn">REJECTED</button>
+            </div>
+             
+        </div>
+    </div>
+
+
+      <div class="card w-full bg-base-100 card-sm shadow-sm">
+           <div class="card-body">
+            <div class="justify-between card-actions">
+                 <h1 class="card-title">TechCorp Industries</h1>
+                  <button id="" class="btn btn-soft rounded-full trash"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+            <p class="halka">senior Frontend Developer</p>
+            <p class="halka py-2">SAn Fransisco,CA . Full-time
+                •
+             $7430,000 - $44,000</p>
+             <button id="" class="btn btn-primary btn-soft  w-40 not-btn">NOT APPLIED</button>
+             <p>We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.
+            </p>
+            <div>
+                 <button id="" class="btn text-green-500 border-green-500 border-2 green-btn">INTERVIEW</button>
+                 <button id="" class="btn text-red-500 border-red-500 border-2 red-btn">REJECTED</button>
+            </div>
+             
+        </div>
+    </div>
+
+    </section>
+
+
+    <!-- interview page-->
+     <div id="interview-page" class="flex flex-col items-center justify-center  w-full bg-base-100 card  h-auto shadow-sm py-13">
+        <img class="h-30 w-30" src="./jobs.png" alt="">
+        <h1 class="font-bold text-[20px]">No Job Available</h1>
+        <p class="halka text-sm">Check back for new job opportunities</p>
+     </div>
+
+    <!-- rejected page -->
+     <div id="rejected-page" class="flex flex-col items-center justify-center  w-full bg-base-100 card  h-auto shadow-sm py-13">
+        <img class="h-30 w-30" src="./jobs.png" alt="">
+        <h1 class="font-bold text-[20px]">No Job Available</h1>
+        <p class="halka text-sm">Check back for new job opportunities</p>
+     </div>
+
+    
+
+
+     <script src="./script/btn.js"></script>
+</body>
+</html>
