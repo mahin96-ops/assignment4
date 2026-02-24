@@ -28,6 +28,9 @@
     .halka{
        color: #64748B;
     }
+    .hello{
+        display: none;
+    }
 </style>
 
 <body class="min-h-screen w-10/12 bg-base-200 mx-auto">
@@ -73,7 +76,8 @@
        
 
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <button onclick="show('card-page')" id="all-btn" class="btn btn-primary btn-soft px-10 py-0 ">All </button>
+            <button onclick="show('card-page')" id="all-btn" class="btn btn-primary btn-soft px-10 py-0 
+             ">All </button>
 
             <button onclick="show('interview-page')" id="interview-btn" class="btn btn-primary btn-soft px-10 py-0">Interview </button>
 
@@ -81,6 +85,8 @@
         </div>
     </section>
 
+
+    
 
      <!-- cards -->
 
@@ -267,14 +273,14 @@
 
 
     <!-- interview page-->
-     <div id="interview-page" class="flex flex-col items-center justify-center  w-full bg-base-100 card  h-auto shadow-sm py-13">
+     <div id="interview-page" class="flex flex-col items-center justify-center  w-full bg-base-100 card  h-auto shadow-sm py-13 hello  ">
         <img class="h-30 w-30" src="./jobs.png" alt="">
         <h1 class="font-bold text-[20px]">No Job Available</h1>
         <p class="halka text-sm">Check back for new job opportunities</p>
      </div>
 
     <!-- rejected page -->
-     <div id="rejected-page" class="flex flex-col items-center justify-center  w-full bg-base-100 card  h-auto shadow-sm py-13">
+     <div id="rejected-page" class="flex flex-col items-center justify-center  w-full bg-base-100 card  h-auto shadow-sm py-13 hii">
         <img class="h-30 w-30" src="./jobs.png" alt="">
         <h1 class="font-bold text-[20px]">No Job Available</h1>
         <p class="halka text-sm">Check back for new job opportunities</p>

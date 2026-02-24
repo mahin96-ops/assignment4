@@ -88,3 +88,10 @@ for(const card of cards){
 
 
  const call = uptadeGulaCount();
+
+ function hide(){
+ const reject = document.getElementsByClassName('hello')
+ const interView = document.getElementsByClassName('hii');
+
+
+ }
