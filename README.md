@@ -19,9 +19,8 @@ ans. Event Bubbling hocche emon ekta prokriya jekhane  child element এ event g
 ans. Event Delegation holo emon ekta system jeikhane amra onekgulo child element- e aladda alada event na diye, tader common parent e ektai event listene bosai and bubbling use kore spesific child dhorte pari
 
 5. What is the difference between preventDefault() and stopPropagation() methods?
-ans: Simple bhashay bolte gele, ei duto method-i browser-er default behavior change kore, kintu tader kajer jayga alada
-   1. preventDefault()
-Er kaj holo browser-er natural behaviour ba prokritigoto kaj atkane. Mane, kono ekta element-er upor kichu korle browser nije theke ja korar kotha chhilo, seta hobe na.
-   2. stopPropagation()
-Er kaj holo Event Bubbling atkane. JavaScript-e jokhon tumi kono element-e click koro, oi click event-ta shudhu oi element-ei thake na, seta tar 'Parent'er kacheo chole jay.
+ans: Simple bhashay bolte gele, ei duto method-i browser-er default behavior change kore, kintu tader kajer jayga alada 
+ 1. preventDefault() Er kaj holo browser-er natural behaviour ba prokritigoto kaj atkane. Mane, kono ekta element-er upor kichu korle browser nije theke ja korar kotha chhilo, seta hobe na.
+   2. stopPropagation()Er kaj holo Event Bubbling atkane. JavaScript-e jokhon tumi kono element-e click koro, oi click event-ta shudhu oi element-ei thake na, seta tar 'Parent'er kacheo chole jay.
+
 
